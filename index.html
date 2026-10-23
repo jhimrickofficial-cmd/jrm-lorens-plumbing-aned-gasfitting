@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Loren's Plumbing &amp; Gasfitting | Vegreville, AB</title>
+<!-- Font Awesome Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<!-- Tailwind CSS CDN with plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration matching the Technician Template -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              yellow: '#F5A623',
+              gold: '#E59819',
+              dark: '#16191E',
+              darker: '#0F1115',
+              muted: '#717784',
+              surface: '#F8F9FA',
+              border: '#E2E5E9'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+<!-- BEGIN: Custom Styles for Layout & Visual Polish -->
+<style data-purpose="custom-decorations">
+    .text-plaid-shadow {
+      text-shadow: 1px 1px 0px rgba(0,0,0,0.25);
+    }
+    .custom-scroll-margin {
+      scroll-margin-top: 5.5rem;
+    }
+    .hero-bg-overlay {
+      background: linear-gradient(105deg, rgba(22, 25, 30, 0.94) 0%, rgba(22, 25, 30, 0.82) 48%, rgba(22, 25, 30, 0.6) 100%);
+    }
+    .process-banner-overlay {
+      background: linear-gradient(to right, rgba(15, 17, 21, 0.95) 0%, rgba(15, 17, 21, 0.78) 60%, rgba(15, 17, 21, 0.45) 100%);
+    }
+  </style>
+<!-- END: Custom Styles for Layout & Visual Polish -->
+</head>
+<body class="bg-[#FBFBFC] text-[#2D3139] font-sans antialiased selection:bg-[#F5A623] selection:text-white">
+<!-- BEGIN: TopUtilityBar -->
+<div class="bg-brand-dark text-white/80 text-xs border-b border-white/10 hidden md:block" data-purpose="utility-header">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 flex items-center justify-between">
+<!-- Social Media Links -->
+<div class="flex items-center space-x-3.5">
+<a aria-label="Facebook" class="hover:text-brand-yellow transition" href="https://facebook.com" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+<a aria-label="Instagram" class="hover:text-brand-yellow transition" href="https://instagram.com" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+<a aria-label="X Twitter" class="hover:text-brand-yellow transition" href="https://twitter.com" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+<a aria-label="TikTok" class="hover:text-brand-yellow transition" href="https://tiktok.com" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+</div>
+<!-- Contact and Location Quick Details -->
+<div class="flex items-center space-x-7">
+<a class="flex items-center space-x-2 hover:text-white transition" href="tel:+15872802134">
+<i class="fa-solid fa-phone text-brand-yellow text-xs"></i>
+<span class="font-medium">+1 (587) 280-2134</span>
+</a>
+<a class="flex items-center space-x-2 hover:text-white transition" href="mailto:contact@lorensplumbing.ca">
+<i class="fa-solid fa-envelope text-brand-yellow text-xs"></i>
+<span>contact@lorensplumbing.ca</span>
+</a>
+<div class="flex items-center space-x-2 text-white/70">
+<i class="fa-solid fa-location-dot text-brand-yellow text-xs"></i>
+<span>Vegreville, AB T9C 1L4, Canada</span>
+</div>
+<a class="bg-brand-yellow hover:bg-brand-gold text-brand-dark font-bold text-xs px-4 py-1.5 rounded transition shadow-sm" href="tel:+15872802134">
+          Order Services
+        </a>
+</div>
+</div>
+</div>
+<!-- END: TopUtilityBar -->
+<!-- BEGIN: StickyMainNavigation -->
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100" data-purpose="site-header">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-20">
+<!-- Brand Logo -->
+<a class="flex items-center space-x-3 group" href="#home">
+<div class="w-11 h-11 rounded-lg bg-brand-dark flex items-center justify-center text-brand-yellow group-hover:scale-105 transition-transform duration-200">
+<i class="fa-solid fa-wrench text-xl"></i>
+</div>
+<div>
+<div class="font-extrabold text-xl tracking-tight text-brand-dark leading-none flex items-center">
+              LOREN'S <span class="ml-1.5 text-xs font-bold uppercase tracking-wider bg-red-800 text-white px-1.5 py-0.5 rounded">Gas &amp; Plumbing</span>
+</div>
+<div class="text-[11px] font-semibold tracking-wider text-brand-muted uppercase mt-0.5">
+              Certified Alberta Tradesman
+            </div>
+</div>
+</a>
+<!-- Desktop Navigation Links -->
+<nav class="hidden lg:flex items-center space-x-8 text-sm font-semibold text-gray-700" data-purpose="main-nav">
+<a class="text-brand-yellow hover:text-brand-gold transition" href="#home">Home</a>
+<a class="hover:text-brand-yellow transition" href="#services">Services</a>
+<a class="hover:text-brand-yellow transition" href="#why-us">Why Us</a>
+<a class="hover:text-brand-yellow transition" href="#process">Process</a>
+<a class="hover:text-brand-yellow transition" href="#testimonials">Reviews</a>
+<a class="hover:text-brand-yellow transition" href="#blog">Tips &amp; News</a>
+<a class="hover:text-brand-yellow transition" href="#contact">Contact</a>
+</nav>
+<!-- Right Header Action Button -->
+<div class="hidden sm:flex items-center space-x-4">
+<a class="inline-flex items-center justify-center px-5 py-3 rounded font-bold text-sm bg-brand-yellow hover:bg-brand-gold text-brand-darker shadow-sm hover:shadow transition-all duration-150" href="tel:+15872802134">
+<i class="fa-solid fa-phone mr-2 text-xs"></i> Call (587) 280-2134
+          </a>
+</div>
+<!-- Mobile Hamburger Button -->
+<div class="lg:hidden">
+<button aria-label="Toggle navigation menu" class="p-2 text-gray-600 hover:text-brand-dark focus:outline-none" id="mobile-menu-btn" type="button">
+<i class="fa-solid fa-bars text-2xl"></i>
+</button>
+</div>
+</div>
+</div>
+<!-- Mobile Dropdown Menu -->
+<div class="hidden lg:hidden bg-white border-b border-gray-200 px-4 pt-3 pb-6 space-y-3" id="mobile-menu">
+<a class="block font-medium text-gray-800 hover:text-brand-yellow py-1" href="#home">Home</a>
+<a class="block font-medium text-gray-800 hover:text-brand-yellow py-1" href="#services">Services</a>
+<a class="block font-medium text-gray-800 hover:text-brand-yellow py-1" href="#why-us">Why Us</a>
+<a class="block font-medium text-gray-800 hover:text-brand-yellow py-1" href="#process">How We Work</a>
+<a class="block font-medium text-gray-800 hover:text-brand-yellow py-1" href="#testimonials">Testimonials</a>
+<a class="block font-medium text-gray-800 hover:text-brand-yellow py-1" href="#blog">Tech Tips &amp; News</a>
+<a class="block font-medium text-gray-800 hover:text-brand-yellow py-1" href="#contact">Contact</a>
+<div class="pt-3 border-t border-gray-100">
+<a class="w-full inline-flex items-center justify-center py-2.5 rounded font-bold text-sm bg-brand-yellow text-brand-darker shadow" href="tel:+15872802134">
+<i class="fa-solid fa-phone mr-2 text-xs"></i> 587-280-2134
+        </a>
+</div>
+</div>
+</header>
+<!-- END: StickyMainNavigation -->
+<!-- BEGIN: HeroSection -->
+<section class="custom-scroll-margin relative bg-brand-dark text-white overflow-hidden" data-purpose="hero-section" id="home">
+<!-- Background trade imagery -->
+<div class="absolute inset-0 z-0">
+<img alt="Loren's Plumbing &amp; Gasfitting White Service Van" class="w-full h-full object-cover object-center filter blur-sm scale-105 opacity-30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIKhxGFQ0Pi5RB3h3sfjRN5cHzw1yqKiX0N_wQ8kdEcW257mNC53ZDRZn1XTgtYyG5U2EVPUFXcsTSCksEjamyyKuJopoLOQ3jro_8mCEIBGZ9CnnLD1vX1tHkktMn3u1VxAFrCmeRsSqMY45lDI3aDlGycMLgQsJ8jezJKNjllkrKC_aQOMK0cE6oK-5k7KGnutrGS06g65m7pyUuPMVL4oWv_1QEkF4YsjzTqQ_cxXTE-wsh-d2BgA"/>
+<div class="absolute inset-0 hero-bg-overlay"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-28">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Hero Content Column -->
+<div class="lg:col-span-7 space-y-6">
+<div class="inline-flex items-center space-x-2 bg-brand-yellow/15 border border-brand-yellow/30 px-3 py-1 rounded text-xs font-semibold uppercase tracking-wider text-brand-yellow">
+<span class="w-2 h-2 rounded-full bg-brand-yellow animate-ping"></span>
+<span>Serving Vegreville &amp; Beaver County</span>
+</div>
+<h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-tight">
+            Your Home, <br/>
+<span class="text-brand-yellow">Our Priority</span>
+</h1>
+<p class="text-base sm:text-lg text-gray-300 max-w-xl font-normal leading-relaxed">
+            At Loren's Plumbing &amp; Gasfitting, we take pride in delivering professional, reliable, and certified gas and plumbing services for every home and commercial facility.
+          </p>
+<!-- Dual Call to Action Buttons -->
+<div class="flex flex-wrap gap-4 pt-2">
+<a class="px-7 py-3.5 rounded bg-brand-yellow hover:bg-brand-gold text-brand-darker font-bold text-sm tracking-wide shadow-md hover:shadow-lg transition" href="#why-us">
+              About Company
+            </a>
+<a class="px-7 py-3.5 rounded bg-white hover:bg-gray-100 text-brand-dark font-bold text-sm tracking-wide shadow-md transition" href="#contact">
+              Get In Touch
+            </a>
+</div>
+<!-- Feature badges in hero -->
+<div class="pt-6 grid grid-cols-3 gap-4 border-t border-white/10 text-xs text-gray-300">
+<div class="flex items-center space-x-2">
+<i class="fa-solid fa-certificate text-brand-yellow text-sm"></i>
+<span>Certified Gasfitter</span>
+</div>
+<div class="flex items-center space-x-2">
+<i class="fa-solid fa-shield-halved text-brand-yellow text-sm"></i>
+<span>Licensed &amp; Insured</span>
+</div>
+<div class="flex items-center space-x-2">
+<i class="fa-solid fa-clock text-brand-yellow text-sm"></i>
+<span>Prompt Dispatch</span>
+</div>
+</div>
+</div>
+<!-- Hero Photo Frame Column: Showcasing Loren's Official Service Van -->
+<div class="lg:col-span-5 relative">
+<div class="relative mx-auto max-w-md lg:max-w-none">
+<!-- Decorative Accent Border Frame -->
+<div class="absolute -top-3 -left-3 w-full h-full rounded-2xl border-2 border-brand-yellow/40 z-0"></div>
+<div class="relative z-10 bg-brand-darker rounded-2xl overflow-hidden shadow-2xl border border-white/15">
+<img alt="Loren's Plumbing &amp; Gasfitting Professional Service Vehicle in Vegreville" class="w-full h-72 sm:h-80 object-cover object-center transform hover:scale-105 transition duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHO1Vy8T8_n655nv7WuzJ3sCGYeOt0AG6scu-31pGzZGt11QnE5HnARgOVIPUcrc7pc7qr_rBMODUyj9d_qxQns38bpFn33CiMqXNDJdmqb6mQPD81kcVI-Vc655igwlOdEgpTEYICKeT59-eM_G9QPWH8qfde1Uy1p_WOxk193oI7_9HRCtgMliYKqQKDV4Hv7eDjpbgFQCILOglN6ugTOQ-Fo63-y9OVX9cb_3MN0MZl35dla2a1sw"/>
+<div class="p-5 bg-gradient-to-t from-black via-brand-darker to-brand-dark text-white">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="text-base font-bold text-white tracking-wide">Loren's Mobile Workshop</h3>
+<p class="text-xs text-gray-400 mt-0.5">Fully stocked for on-site repairs</p>
+</div>
+<a class="px-3 py-1.5 rounded bg-brand-yellow text-brand-dark font-bold text-xs uppercase tracking-wider flex items-center hover:bg-white transition" href="tel:+15872802134">
+<i class="fa-solid fa-phone mr-1.5 text-[10px]"></i> Call
+                  </a>
+</div>
+</div>
+</div>
+<!-- Experience Badge Over Van -->
+<div class="absolute -bottom-5 -right-4 z-20 bg-brand-yellow text-brand-darker px-4 py-2.5 rounded-xl shadow-xl flex items-center space-x-3 border-2 border-brand-darker">
+<i class="fa-solid fa-award text-2xl"></i>
+<div>
+<p class="text-[11px] font-bold uppercase leading-none">Local Pride</p>
+<p class="text-sm font-extrabold leading-none mt-0.5">Vegreville, AB</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: OurBestServicesSection -->
+<section class="custom-scroll-margin py-20 bg-[#FBFBFC]" data-purpose="services-overview" id="services">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+<div>
+<span class="text-xs font-bold tracking-widest uppercase text-brand-muted">
+            POWER UP: EXPERT PLUMBING &amp; GAS SOLUTIONS
+          </span>
+<h2 class="text-3xl sm:text-4xl font-black text-brand-dark mt-2 tracking-tight">
+            Our Best Services
+          </h2>
+<p class="text-sm sm:text-base text-gray-500 mt-2 max-w-xl">
+            At Loren's, we take pride in delivering professional, certified gasfitting and plumbing solutions for every rural and municipal home.
+          </p>
+</div>
+<div class="mt-6 md:mt-0">
+<a class="inline-flex items-center px-6 py-3 rounded bg-brand-dark hover:bg-black text-white font-bold text-xs uppercase tracking-wider transition shadow-sm" href="#contact">
+            View All Services <i class="fa-solid fa-arrow-right ml-2 text-brand-yellow"></i>
+</a>
+</div>
+</div>
+<!-- Highlighted Service Feature Card Layout (Technician 1:1 Layout) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-white rounded-2xl p-6 sm:p-8 border border-gray-200 shadow-sm mb-14">
+<!-- Visual Featured Image with Yellow Offset Box -->
+<div class="lg:col-span-5 relative">
+<div class="absolute -top-3 -left-3 w-32 h-32 bg-brand-yellow/20 rounded-xl z-0"></div>
+<div class="relative z-10 rounded-xl overflow-hidden shadow-lg border border-gray-100 h-80">
+<img alt="Certified Alberta Master Plumber installing boiler and gas copper pipes" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHtUDqHP428RTzCdvoG7CgZPzZ6fKNig44Afzj1voqRw53Xwpe5fzgOkhMlnahwQlXgn_GlaH7AoW2ZgamPH2IUgAI7JyxPGUPSwPHjY4VEawEGJMdZSY86hfr6D2VYb9Dqlp9g7t7irNRC6_L-7JHBo0IodZdC0dEb1fDoQiYcoTW6ZNa8PtYtnSeXRgTcaYgb2NnFDxCp4cM-hynYcLuQcpk31nz7TAIxiYgmLyd72ZJvGQvQ0ubGQ"/>
+</div>
+</div>
+<!-- 4 Key Core Specializations in 2x2 Grid -->
+<div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
+<!-- Item 1: Gasfitting -->
+<div class="space-y-2">
+<div class="w-10 h-10 rounded-lg bg-brand-yellow/15 flex items-center justify-center text-brand-dark">
+<i class="fa-solid fa-fire-burner text-lg text-brand-yellow"></i>
+</div>
+<h3 class="font-bold text-brand-dark text-base">Gasfitting &amp; Line Installs</h3>
+<p class="text-xs text-gray-500 leading-relaxed">
+              Certified natural gas and propane lines, garage unit heaters, furnace connections, and patio BBQ quick-connects.
+            </p>
+</div>
+<!-- Item 2: Plumbing Repairs -->
+<div class="space-y-2">
+<div class="w-10 h-10 rounded-lg bg-brand-yellow/15 flex items-center justify-center text-brand-dark">
+<i class="fa-solid fa-faucet-drip text-lg text-brand-yellow"></i>
+</div>
+<h3 class="font-bold text-brand-dark text-base">Plumbing Repairs</h3>
+<p class="text-xs text-gray-500 leading-relaxed">
+              Fast diagnostics for frozen pipes, stubborn blockages, running toilets, and leaky main shutoff valves.
+            </p>
+</div>
+<!-- Item 3: Water Heaters & Boilers -->
+<div class="space-y-2">
+<div class="w-10 h-10 rounded-lg bg-brand-yellow/15 flex items-center justify-center text-brand-dark">
+<i class="fa-solid fa-temperature-high text-lg text-brand-yellow"></i>
+</div>
+<h3 class="font-bold text-brand-dark text-base">Water Heaters &amp; Boilers</h3>
+<p class="text-xs text-gray-500 leading-relaxed">
+              High-efficiency tankless units, standard hot water tanks, combi-boilers, and hydronic heating systems.
+            </p>
+</div>
+<!-- Item 4: Bathroom & Kitchen Renovations -->
+<div class="space-y-2">
+<div class="w-10 h-10 rounded-lg bg-brand-yellow/15 flex items-center justify-center text-brand-dark">
+<i class="fa-solid fa-sink text-lg text-brand-yellow"></i>
+</div>
+<h3 class="font-bold text-brand-dark text-base">Renovations &amp; Rough-Ins</h3>
+<p class="text-xs text-gray-500 leading-relaxed">
+              Complete PEX re-piping, vanity installs, modern faucets, and full basement plumbing developments.
+            </p>
+</div>
+</div>
+</div>
+<!-- 6 Photo Service Cards (matching 2x3 grid from template) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" data-purpose="services-cards-grid">
+<!-- Card 1: Plumbing Repairs -->
+<div class="group bg-white rounded-xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-md transition">
+<div class="relative h-48 overflow-hidden">
+<img alt="Plumbing Under Sink Repairs" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJZynAKfEecLOtTkdNZAsLtEn7RyficRH1SmhQq3Fkw_LUq3yIe1J5SRKY4JqB8h0F5lv_X48Ax4TiKz1gheRjqZSo2L9D9Hc8TK77bjhduE_IYEKRAGWOvT9VWwV7ak7z70HA97yyWl9fNFXrIyD38ekKjI_tOCnkGmbjsqUOoxsdPqwJzmoVNUI_NON7JNp7FkXcTo7eVfSjk7iuSP1UloXdTHdnbR_y8XRj64b6dqPpSLeeqQgKTA"/>
+<div class="absolute bottom-2 left-2 bg-brand-dark/80 backdrop-blur-sm text-white px-2 py-0.5 rounded text-[11px] font-semibold">
+              Residential Plumbing
+            </div>
+</div>
+<div class="p-5">
+<h3 class="font-bold text-lg text-brand-dark mb-1">Kitchen &amp; Sink Repairs</h3>
+<p class="text-xs text-gray-500 mb-4 leading-relaxed">
+              Certified leak repairs, garbage disposal installations, and copper-to-PEX piping adaptations.
+            </p>
+<a class="text-xs font-bold text-brand-dark hover:text-brand-yellow transition flex items-center" href="tel:+15872802134">
+              Request Repair <i class="fa-solid fa-arrow-right ml-1.5 text-xs text-brand-yellow"></i>
+</a>
+</div>
+</div>
+<!-- Card 2: Gas Line Piping -->
+<div class="group bg-white rounded-xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-md transition">
+<div class="relative h-48 overflow-hidden">
+<img alt="Gasfitting and Gas Line Installation" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHpYhv6PBrHlXB3FfwAD04Tuqi7ydhU4D7Py7IX5Y7kfZXSmcQM3dqJ8oWE7XPSqMPaWnMnwpCzJ147YMzHpQqE3ef3IxsqhYubZJ737XxRFEeVE4Fv5isJW8SsvZmW9hhWkkb2ABxVX2vuNyrTZ-WLlXGygfH81Vrbq6nGlciscIl5xG1pmJsVTzVRi5-7VRDTvns6W6zl7tivRCWTXYfv-5QAO31nZNxRTXxOsVax_dQcXLU4z1azQ"/>
+<div class="absolute bottom-2 left-2 bg-brand-dark/80 backdrop-blur-sm text-white px-2 py-0.5 rounded text-[11px] font-semibold">
+              Certified Gasfitting
+            </div>
+</div>
+<div class="p-5">
+<h3 class="font-bold text-lg text-brand-dark mb-1">Gas Line Piping &amp; Heaters</h3>
+<p class="text-xs text-gray-500 mb-4 leading-relaxed">
+              Safe natural gas line installations for ranges, fireplaces, garage radiant heaters, and outdoor kitchens.
+            </p>
+<a class="text-xs font-bold text-brand-dark hover:text-brand-yellow transition flex items-center" href="tel:+15872802134">
+              Book Gas Inspection <i class="fa-solid fa-arrow-right ml-1.5 text-xs text-brand-yellow"></i>
+</a>
+</div>
+</div>
+<!-- Card 3: Mechanical Room & Boilers -->
+<div class="group bg-white rounded-xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-md transition">
+<div class="relative h-48 overflow-hidden">
+<img alt="Modern Mechanical Room Boiler &amp; Tankless Water Heater" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4sSNQtZWMZGr6NefpwH8BeBKQ1JsTPGvei57Hm7iK_0bzUOM_xmWkHofLzewzXQ-MKiuR6uLi2gVzHYt47Ad34q-Nz46pVjOrVq1R55DZ2LaRIod43psAoq2nRcKvRP2CpBJvOET0iyeC4oEqsa5ALXFQti-A8sJ8RllOtQrzkRO_sCuql7ijCr_6r8G9CDULvmai27iCF4cgoqGeLFM6LeZ9c8_4vSurU9n86J0txykUYKEElH9qxg"/>
+<div class="absolute bottom-2 left-2 bg-brand-dark/80 backdrop-blur-sm text-white px-2 py-0.5 rounded text-[11px] font-semibold">
+              High Efficiency
+            </div>
+</div>
+<div class="p-5">
+<h3 class="font-bold text-lg text-brand-dark mb-1">Tankless &amp; Boilers</h3>
+<p class="text-xs text-gray-500 mb-4 leading-relaxed">
+              Energy-efficient hot water on demand and hydronic heating manifolds installed with precision.
+            </p>
+<a class="text-xs font-bold text-brand-dark hover:text-brand-yellow transition flex items-center" href="tel:+15872802134">
+              Upgrade System <i class="fa-solid fa-arrow-right ml-1.5 text-xs text-brand-yellow"></i>
+</a>
+</div>
+</div>
+<!-- Card 4: Bathroom Renovations -->
+<div class="group bg-white rounded-xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-md transition">
+<div class="relative h-48 overflow-hidden">
+<img alt="Luxury Bathroom Renovation with Chrome Fixtures" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCamrwRvry3yKPG6xSqNGKyNZrrP1z_gsRWFn2FRp5l9mdfGtug7jP4c47xbdRpRvlcJUvMUcoPVjaUVPRcK-OSYfTUIjvPcspbAPvBuwhnVzRmxLRckOkYZ0rGFRPclvJXJEomFpraJ87fEVjP7g0D72bs5wOjdLMI3NOqgt9PdMYblAbvnMGIgJV4AO74NKdZ3w7_YyAne9wEb0rsf-3grIihGtvSVfKMZax1uzAaYwpJczL97bmb3A"/>
+<div class="absolute bottom-2 left-2 bg-brand-dark/80 backdrop-blur-sm text-white px-2 py-0.5 rounded text-[11px] font-semibold">
+              Renovation
+            </div>
+</div>
+<div class="p-5">
+<h3 class="font-bold text-lg text-brand-dark mb-1">Bathroom Renovations</h3>
+<p class="text-xs text-gray-500 mb-4 leading-relaxed">
+              Custom showers, free-standing soaker tubs, floating vanity plumbing, and backwater check valves.
+            </p>
+<a class="text-xs font-bold text-brand-dark hover:text-brand-yellow transition flex items-center" href="tel:+15872802134">
+              Plan Bathroom <i class="fa-solid fa-arrow-right ml-1.5 text-xs text-brand-yellow"></i>
+</a>
+</div>
+</div>
+<!-- Card 5: Mobile Response & Diagnostics -->
+<div class="group bg-white rounded-xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-md transition">
+<div class="relative h-48 overflow-hidden bg-gray-100">
+<img alt="Loren's Service Van for Fast Mobile Diagnostics" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjxgl285zowMk9wOiwq1WIC-jJyh67m8SXu86I0AcM10JShzkAHmFhnpOoZD2MKOgKhPpaSJj8Z0Pjv5Zuu28YgOQOI8Jk-V0B7FQFk00HbzWRbPu1UbL94AES_e8GeJYQZ0O6gaTFbLNONrjaSZfcMKy1Dg7vwqRkRdKxyZx_sbWnG8NJpk1MhXxHb8cMK7s1GwyaA5LFxagCgZSAoaFOtPwZZg6faRz_gzOJOaZ8JAE6p8fIFY6yuw"/>
+<div class="absolute bottom-2 left-2 bg-brand-dark/80 backdrop-blur-sm text-white px-2 py-0.5 rounded text-[11px] font-semibold">
+              County Dispatch
+            </div>
+</div>
+<div class="p-5">
+<h3 class="font-bold text-lg text-brand-dark mb-1">Rural &amp; Emergency Service</h3>
+<p class="text-xs text-gray-500 mb-4 leading-relaxed">
+              Rapid response to Mundare, Two Hills, Minburn, Holden, and Elk Island farm acreages.
+            </p>
+<a class="text-xs font-bold text-brand-dark hover:text-brand-yellow transition flex items-center" href="tel:+15872802134">
+              Emergency Callout <i class="fa-solid fa-arrow-right ml-1.5 text-xs text-brand-yellow"></i>
+</a>
+</div>
+</div>
+<!-- Card 6: Hot Water Tanks & Safety Checks -->
+<div class="group bg-white rounded-xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-md transition">
+<div class="relative h-48 overflow-hidden">
+<img alt="Certified Hot Water Tank Maintenance" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE408kwT7DODJPDQGqcDzNgR3no0hJwgn5kN270ejsf-SiZxDTiTQ-_K_8e3Xu_rgWfH068HQU1Q65ccaBNNpr_HJQmVPvuYDMVvb-lDpxQYaDBVkExZYgvM3aMA2SCwLUHo3ThCXwXVH_1edEoRkrSFiWMpi7qjmODsusg5qj_4Y2Aljdg1UaAZq0mXvOhWfUvtwE15aDMdV0_Zo0wtY7mba2hfPjuVAcyQRfsi84Oiv6q9vUKk2s-g"/>
+<div class="absolute bottom-2 left-2 bg-brand-dark/80 backdrop-blur-sm text-white px-2 py-0.5 rounded text-[11px] font-semibold">
+              Safety First
+            </div>
+</div>
+<div class="p-5">
+<h3 class="font-bold text-lg text-brand-dark mb-1">Hot Water Tank Swaps</h3>
+<p class="text-xs text-gray-500 mb-4 leading-relaxed">
+              Same-day replacement of aging leaking hot water cylinders with top-grade Bradford White systems.
+            </p>
+<a class="text-xs font-bold text-brand-dark hover:text-brand-yellow transition flex items-center" href="tel:+15872802134">
+              Get an Estimate <i class="fa-solid fa-arrow-right ml-1.5 text-xs text-brand-yellow"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: OurBestServicesSection -->
+<!-- BEGIN: QuickDispatchBookingBar -->
+<section class="bg-white border-y border-gray-200 py-6" data-purpose="quick-dispatch-bar">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4 items-center">
+<!-- Direct Phone contact block -->
+<div class="flex items-center space-x-3 text-brand-dark">
+<div class="w-10 h-10 rounded-full bg-brand-yellow/15 flex items-center justify-center text-brand-dark">
+<i class="fa-solid fa-phone text-sm"></i>
+</div>
+<div>
+<p class="text-xs text-gray-500">Call Dispatch Direct</p>
+<a class="text-sm font-bold text-brand-dark hover:text-brand-yellow transition" href="tel:+15872802134">
+              (587) 280-2134
+            </a>
+</div>
+</div>
+<!-- Service Location block -->
+<div class="flex items-center space-x-3 text-brand-dark">
+<div class="w-10 h-10 rounded-full bg-brand-yellow/15 flex items-center justify-center text-brand-dark">
+<i class="fa-solid fa-location-dot text-sm"></i>
+</div>
+<div>
+<p class="text-xs text-gray-500">Service Base</p>
+<span class="text-xs font-bold text-brand-dark">Vegreville, AB T9C 1L4</span>
+</div>
+</div>
+<!-- Appointment Time Selector input -->
+<div class="md:col-span-1">
+<label class="sr-only" for="preferred-time">Preferred Time</label>
+<div class="relative">
+<input class="w-full text-xs rounded border-gray-300 focus:border-brand-yellow focus:ring-brand-yellow py-2.5 px-3 pr-8" id="preferred-time" placeholder="Time for a Fix? (e.g. Morning)" type="text"/>
+<i class="fa-regular fa-clock absolute right-3 top-3 text-gray-400 text-xs"></i>
+</div>
+</div>
+<!-- Schedule Button -->
+<div class="md:col-span-1">
+<a class="w-full inline-flex items-center justify-center py-2.5 px-4 rounded bg-brand-yellow hover:bg-brand-gold text-brand-darker font-bold text-xs uppercase tracking-wider transition shadow-sm" href="#contact">
+            Schedule Service
+          </a>
+</div>
+</div>
+</div>
+</section>
+<!-- END: QuickDispatchBookingBar -->
+<!-- BEGIN: WhyUsSection -->
+<section class="custom-scroll-margin py-20 bg-brand-dark text-white relative overflow-hidden" data-purpose="why-choose-us" id="why-us">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+<!-- Left Side: Numbered Value Propositions -->
+<div class="lg:col-span-6 bg-brand-yellow text-brand-darker rounded-2xl p-8 sm:p-12 flex flex-col justify-between shadow-xl">
+<div>
+<span class="text-xs font-black uppercase tracking-widest text-brand-darker/70">Reliable &amp; Proven</span>
+<h2 class="text-3xl sm:text-4xl font-black text-brand-darker tracking-tight mt-2 mb-8 leading-tight">
+              We Are Always Ready <br/>To Help Your Problems
+            </h2>
+<div class="space-y-6">
+<!-- Item 1 -->
+<div class="flex items-start space-x-4">
+<div class="w-8 h-8 rounded-full bg-brand-darker text-white font-black flex items-center justify-center text-sm shrink-0">
+                  1
+                </div>
+<div>
+<h3 class="text-base font-extrabold text-brand-darker">Certified Gasfitters &amp; Plumbers</h3>
+<p class="text-xs text-brand-darker/80 mt-1 leading-relaxed">
+                    Trained to rigorous Alberta safety codes for high-pressure gas fitting, boilers, and drinking water safety.
+                  </p>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex items-start space-x-4">
+<div class="w-8 h-8 rounded-full bg-brand-darker text-white font-black flex items-center justify-center text-sm shrink-0">
+                  2
+                </div>
+<div>
+<h3 class="text-base font-extrabold text-brand-darker">Quality Workmanship Guarantee</h3>
+<p class="text-xs text-brand-darker/80 mt-1 leading-relaxed">
+                    We use top-tier valves, brass fittings, and commercial copper techniques so repairs last for decades.
+                  </p>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="flex items-start space-x-4">
+<div class="w-8 h-8 rounded-full bg-brand-darker text-white font-black flex items-center justify-center text-sm shrink-0">
+                  3
+                </div>
+<div>
+<h3 class="text-base font-extrabold text-brand-darker">Honest &amp; Upfront Rates</h3>
+<p class="text-xs text-brand-darker/80 mt-1 leading-relaxed">
+                    Transparent quotes without hidden rural dispatch surcharges for Vegreville and neighboring towns.
+                  </p>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-6 border-t border-brand-darker/20 flex items-center justify-between">
+<span class="text-xs font-bold text-brand-darker">Over a decade serving Elk Island county</span>
+<i class="fa-solid fa-shield-cat text-2xl text-brand-darker/40"></i>
+</div>
+</div>
+<!-- Right Side: Partner for Quality & Reliability banner with trade visual -->
+<div class="lg:col-span-6 relative rounded-2xl overflow-hidden min-h-[380px] flex items-center p-8 sm:p-12 shadow-xl border border-white/10">
+<img alt="Quality Plumbing Workmanship by Loren's" class="absolute inset-0 w-full h-full object-cover filter brightness-50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBk5fDNiyUCtVrJ5XUc2cH0AAyfvIBP-qIx8xO64puoSm2wYj19XdCHjoIFvK-m-eawu2o0heYAd952CUT-FNQles_BthMvQe0tl9XnmfR7FxzebbTF6BjytSiuU7B2w0ln_tYW2AJ_gTUYJRwBExHdk69TobFNWmNMY0-rMjeImZsr_lHLD8kTcalKhmR6cCd1MIAkoDelHAlFrgrWZX10xZ-HppY9lbUpu__Ysi1G66H8A0-vr8WknQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-brand-darker via-brand-dark/80 to-transparent"></div>
+<div class="relative z-10 space-y-4 max-w-lg">
+<span class="text-xs font-bold uppercase tracking-widest text-brand-yellow">
+              LET'S FIX IT TOGETHER!
+            </span>
+<h3 class="text-3xl sm:text-4xl font-black text-white tracking-tight leading-snug">
+              Partner For Quality And Reliability!
+            </h3>
+<p class="text-xs sm:text-sm text-gray-300 leading-relaxed">
+              At Loren's, we have successfully assisted rural homesteads, commercial retailers, and town residences with prompt tradesmanship you can trust.
+            </p>
+<div class="pt-4">
+<a class="inline-flex items-center px-6 py-3 rounded bg-white hover:bg-gray-100 text-brand-dark font-bold text-xs uppercase tracking-wider transition shadow-md" href="#contact">
+                Get In Touch <i class="fa-solid fa-arrow-right ml-2 text-xs text-brand-dark"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: WhyUsSection -->
+<!-- BEGIN: HowWeWorkBanner -->
+<section class="custom-scroll-margin relative py-20 bg-brand-dark text-white overflow-hidden" data-purpose="process-banner" id="process">
+<!-- Background image -->
+<div class="absolute inset-0 z-0">
+<img alt="How We Work Plumbing Piping" class="w-full h-full object-cover filter brightness-40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCA72692uUKJe8FZMFXq0fN53cl40jJ6-47evKEDEIM49rKbT_subA1-yo3wMRXtSEAt2yoRKFBiR_23AePOL0886aB5nZU6rYpFH3TiFi-_5w_Qtx7z-2vCaWMsXqSMFv2B_8IBEdclczEej1EmSa6DiacBVtquo26VxnBDGpMnHuRz0odWxMd8Z7GerDKVqBILd5nCRIOK1hYIspDn4VflQAlYEf4x8T3xS7WM59g3B23AqOBnbXNfQ"/>
+<div class="absolute inset-0 process-banner-overlay"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="max-w-xl space-y-4">
+<span class="text-xs font-bold uppercase tracking-widest text-brand-yellow">
+          FROM ASSESSMENT TO PERFECTION
+        </span>
+<h2 class="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
+          How We Work
+        </h2>
+<p class="text-sm sm:text-base text-gray-300 leading-relaxed font-normal">
+          Our certified expert team is committed to making every home a safer, better place, one accurate diagnostic and clean installation at a time.
+        </p>
+<div class="pt-4 flex items-center space-x-4">
+<a class="inline-flex items-center px-6 py-3.5 rounded bg-brand-yellow hover:bg-brand-gold text-brand-dark font-bold text-xs uppercase tracking-wider transition shadow-lg" href="tel:+15872802134">
+<i class="fa-solid fa-phone mr-2"></i> Book An Assessment
+          </a>
+<a class="inline-flex items-center px-6 py-3.5 rounded bg-white/10 hover:bg-white/20 text-white font-bold text-xs uppercase tracking-wider transition backdrop-blur-sm border border-white/20" href="#services">
+            View Work Steps
+          </a>
+</div>
+</div>
+</div>
+</section>
+<!-- END: HowWeWorkBanner -->
+<!-- BEGIN: TestimonialsSection -->
+<section class="custom-scroll-margin py-20 bg-[#F3F4F6]" data-purpose="customer-testimonials" id="testimonials">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="bg-white rounded-2xl p-8 sm:p-12 border border-gray-200 shadow-sm">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<!-- Testimonial Visual / Tradesperson Photo -->
+<div class="lg:col-span-4 flex justify-center">
+<div class="relative">
+<div class="w-56 h-64 sm:w-64 sm:h-72 rounded-2xl overflow-hidden shadow-lg border-4 border-white">
+<img alt="Loren's Certified Plumber" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYsLvCTTfq6hY5xRi2MRyWwIF2V-j2jerTgl8lzsMe9eHmWvAfsL3RFyCiunG7Zg0XNq20unMorJJtYtsScD2MTstc5L1FtMhfQtSDNiETtbUIrg3n8bOttV_O_SIvUE_lq0dJkEQ-Coyf_wnGSrVbsRAU5wQ8FVJmCkOWqcHNd_M0eg3EPYwJhjU_WXEo5a8rI7lupa0o8OthmU1S9O2nANQHZWcMNDF4ie2JnvPAs07Ko3m7QYH3Sw"/>
+</div>
+<div class="absolute -bottom-3 -right-3 bg-brand-dark text-white px-3 py-1.5 rounded-lg text-xs font-bold flex items-center shadow">
+<i class="fa-solid fa-shield-heart text-brand-yellow mr-1.5"></i> 100% Guaranteed
+              </div>
+</div>
+</div>
+<!-- Review Quote & Navigation -->
+<div class="lg:col-span-8 space-y-4">
+<span class="text-xs font-bold uppercase tracking-widest text-brand-muted">TESTIMONIALS</span>
+<blockquote class="text-lg sm:text-2xl font-bold text-brand-dark italic leading-relaxed">
+              "Loren provided exceptional plumbing and gasfitting service from start to finish. Our basement heating boiler gave out right before a cold snap, and he was here with parts in his van and had us warm before nightfall. Couldn't be more satisfied with the results!"
+            </blockquote>
+<!-- Rating Stars -->
+<div class="flex items-center space-x-1 text-brand-yellow pt-2">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div>
+<p class="font-extrabold text-sm text-brand-dark uppercase tracking-wider">JOHN MATTHEWS</p>
+<p class="text-xs text-gray-500">Verified Vegreville Homeowner</p>
+</div>
+<!-- Slider Navigation controls matching template -->
+<div class="flex items-center space-x-2">
+<button aria-label="Previous Testimonial" class="w-9 h-9 rounded-full border border-gray-300 hover:border-brand-dark text-gray-500 hover:text-brand-dark flex items-center justify-center transition" type="button">
+<i class="fa-solid fa-arrow-left text-xs"></i>
+</button>
+<button aria-label="Next Testimonial" class="w-9 h-9 rounded-full border border-gray-300 hover:border-brand-dark text-gray-500 hover:text-brand-dark flex items-center justify-center transition" type="button">
+<i class="fa-solid fa-arrow-right text-xs"></i>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: TestimonialsSection -->
+<!-- BEGIN: TechTipsAndNewsSection -->
+<section class="custom-scroll-margin py-20 bg-white" data-purpose="blog-news-section" id="blog">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+<div>
+<span class="text-xs font-bold tracking-widest uppercase text-brand-muted">
+            STAY IN THE KNOW WITH LOREN'S
+          </span>
+<h2 class="text-3xl sm:text-4xl font-black text-brand-dark mt-2 tracking-tight">
+            Tech Tips &amp; News
+          </h2>
+<p class="text-sm text-gray-500 mt-2 max-w-lg">
+            Practical homeowner advice for surviving Canadian winters, managing gas appliances, and avoiding costly emergency leaks.
+          </p>
+</div>
+<div class="mt-4 md:mt-0">
+<a class="inline-flex items-center px-6 py-3 rounded bg-brand-dark hover:bg-black text-white font-bold text-xs uppercase tracking-wider transition shadow-sm" href="#contact">
+            Read All News <i class="fa-solid fa-arrow-right ml-2 text-brand-yellow"></i>
+</a>
+</div>
+</div>
+<!-- 3 Blog Cards with Date Badges matching Technician format -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Blog 1 -->
+<article class="group bg-white rounded-xl overflow-hidden border border-gray-200 hover:shadow-md transition">
+<div class="relative h-48 overflow-hidden bg-gray-100">
+<img alt="Winterizing Plumbing Lines" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTAw8p-z7LR7eFzgRNM0uDGjKwkOH1mYSXydVFbrkh49-CZdozaq5V7bDgEwbHAH7CCKTgGT96pRxvPKUzNAEZ2nLYoX8o8r1TnnoGRKefwonqGJ9WPOEBEwnrTuHGYBTkKBbME3BDs9vwTkKtFqGH1tbtieKqCI6hrGyQ8vj6lGFLLw7FxTEHEcttUpywyVI4S1mXcRr6b5os_PTOUFskaBXFLiJeyu6INVWp1fRnsVCpwofWhIa2Uw"/>
+<!-- Date Badge -->
+<div class="absolute top-3 left-3 bg-brand-yellow text-brand-darker font-extrabold text-center px-2.5 py-1.5 rounded shadow">
+<span class="block text-[10px] uppercase tracking-wider leading-none">OCT</span>
+<span class="block text-base leading-none font-black mt-0.5">24</span>
+</div>
+</div>
+<div class="p-5">
+<h3 class="font-bold text-base text-brand-dark group-hover:text-brand-yellow transition mb-2">
+              Preparing Your Alberta Home Plumbing for Winter Freeze-ups
+            </h3>
+<p class="text-xs text-gray-500 leading-relaxed mb-4">
+              Step-by-step methods to insulate exposed crawlspace copper, drain outdoor sillcocks, and protect sump outlets before sub-zero temperatures arrive.
+            </p>
+<a class="text-xs font-bold text-brand-dark hover:text-brand-yellow transition flex items-center" href="#contact">
+              Read Guide <i class="fa-solid fa-arrow-right ml-1.5 text-xs text-brand-yellow"></i>
+</a>
+</div>
+</article>
+<!-- Blog 2 -->
+<article class="group bg-white rounded-xl overflow-hidden border border-gray-200 hover:shadow-md transition">
+<div class="relative h-48 overflow-hidden bg-gray-100">
+<img alt="Gas Heater and Tankless Boiler Installation Tips" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0piDehjp6IFnQKqmSUv1uihzlUQVbTjLCsScRtx9nQ288j-tFeGDNfUSMFk4HvUgXBnBtITw_yGX9wFWYHB3mQyJDx8Cj_AGs-afuxcKHuIcLfi6bnEj7_nLQvJzd1MnjFhzGbz2CT84iSOSNk-BxiV7WUJfCzS0HTaFHUU85AEdEa4PW8zY8YjynoggByFO8BzpStg_VX6_6uTTf3eXJE7nMq8uq0UetKv5-v3VNdEbdj8bXvuCz3g"/>
+<!-- Date Badge -->
+<div class="absolute top-3 left-3 bg-brand-yellow text-brand-darker font-extrabold text-center px-2.5 py-1.5 rounded shadow">
+<span class="block text-[10px] uppercase tracking-wider leading-none">NOV</span>
+<span class="block text-base leading-none font-black mt-0.5">08</span>
+</div>
+</div>
+<div class="p-5">
+<h3 class="font-bold text-base text-brand-dark group-hover:text-brand-yellow transition mb-2">
+              Natural Gas vs Propane: Safe Garage Heater Installation
+            </h3>
+<p class="text-xs text-gray-500 leading-relaxed mb-4">
+              Key considerations on pipe sizing, venting clearance regulations, and carbon monoxide precautions when keeping your workspace warm.
+            </p>
+<a class="text-xs font-bold text-brand-dark hover:text-brand-yellow transition flex items-center" href="#contact">
+              Read Guide <i class="fa-solid fa-arrow-right ml-1.5 text-xs text-brand-yellow"></i>
+</a>
+</div>
+</article>
+<!-- Blog 3 -->
+<article class="group bg-white rounded-xl overflow-hidden border border-gray-200 hover:shadow-md transition">
+<div class="relative h-48 overflow-hidden bg-gray-100">
+<img alt="Plumbing Hacks and Tankless Upgrades" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBKDziLg09ebdCd8gaw2Ri2x3KntLVt1XcJfS9J6vQzwFUKB29NIQOjNMJJ5XGy4zwtlhI7ttIhfaw2Q6-OFlwYNbUzHmTmci-BUn3CxaaqFjxacAC4MJ2ARncCZ-crEqbzYPW6l9faYEeMqpk3ABshBIYis2If-NYb2CQat7U04hzIu6DM1reKF7DpS4WXcux2bYzrbAfwssScvn4vqOHsoNcCF-KngALYz1fY161x9nJyANOZH44hA"/>
+<!-- Date Badge -->
+<div class="absolute top-3 left-3 bg-brand-yellow text-brand-darker font-extrabold text-center px-2.5 py-1.5 rounded shadow">
+<span class="block text-[10px] uppercase tracking-wider leading-none">NOV</span>
+<span class="block text-base leading-none font-black mt-0.5">15</span>
+</div>
+</div>
+<div class="p-5">
+<h3 class="font-bold text-base text-brand-dark group-hover:text-brand-yellow transition mb-2">
+              Signs It's Time to Upgrade to an On-Demand Tankless System
+            </h3>
+<p class="text-xs text-gray-500 leading-relaxed mb-4">
+              Explore how continuous hot water saves gas consumption and eliminates catastrophic flooded basement tank ruptures.
+            </p>
+<a class="text-xs font-bold text-brand-dark hover:text-brand-yellow transition flex items-center" href="#contact">
+              Read Guide <i class="fa-solid fa-arrow-right ml-1.5 text-xs text-brand-yellow"></i>
+</a>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- END: TechTipsAndNewsSection -->
+<!-- BEGIN: NewsletterBanner -->
+<section class="py-12 bg-white" data-purpose="newsletter-subscription">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="bg-brand-yellow rounded-2xl overflow-hidden shadow-xl grid grid-cols-1 lg:grid-cols-12 items-center">
+<!-- Left: Form Box -->
+<div class="lg:col-span-7 p-8 sm:p-12 space-y-4">
+<div class="flex items-center -space-x-2">
+<div class="w-9 h-9 rounded-full bg-white/30 border-2 border-white flex items-center justify-center font-bold text-xs text-brand-dark">LP</div>
+<div class="w-9 h-9 rounded-full bg-white/40 border-2 border-white flex items-center justify-center font-bold text-xs text-brand-dark">AB</div>
+<div class="w-9 h-9 rounded-full bg-brand-dark border-2 border-white flex items-center justify-center text-xs text-brand-yellow"><i class="fa-solid fa-check"></i></div>
+</div>
+<h2 class="text-2xl sm:text-3xl font-black text-brand-darker tracking-tight leading-tight">
+            Subscribe To Our Latest Updates &amp; Seasonal Discounts!
+          </h2>
+<p class="text-xs text-brand-darker/80 max-w-md">
+            Trust Loren's Plumbing &amp; Gasfitting for seasonal furnace checkups and spring backflow prevention alerts.
+          </p>
+<form class="space-y-3 pt-2" id="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Loren\'s service updates!');">
+<div class="relative max-w-md">
+<input class="w-full rounded border-0 text-xs py-3 px-4 focus:ring-2 focus:ring-brand-darker pr-10 shadow-sm text-gray-800" placeholder="Enter your email address" required="" type="email"/>
+<i class="fa-regular fa-envelope absolute right-3.5 top-3.5 text-gray-400 text-xs"></i>
+</div>
+<button class="px-6 py-3 rounded bg-brand-darker hover:bg-black text-white font-bold text-xs uppercase tracking-wider transition shadow-md" type="submit">
+              Subscribe
+            </button>
+</form>
+</div>
+<!-- Right: Plumber Toolbox Visual matching Technician Template visual -->
+<div class="lg:col-span-5 h-64 lg:h-full relative overflow-hidden bg-amber-400">
+<img alt="Service Tooling &amp; Quality Equipment" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSKmL--lam-U6SesIb74xTB3_6QNwnnu_9LVdgvQb8k71aY-PC10H6QV8jSN8ih1aREnAXLsN4FP1q9ZZ6w1Uin4lV5coaRpd8WTuLM5zCbHq3pj1Jx8shO34Nb9YkNc8edsjhdjblTAhR_YYuUHb3_3pKGhlVb8gcprrISxJUXQ4F6YWJcDHB8ct13euEHJHPdVbTR4zXSr-SriBndNvVU6iAQs061QqFrLJgOdCbP94llUzV2YoaHg"/>
+</div>
+</div>
+</div>
+</section>
+<!-- END: NewsletterBanner -->
+<!-- BEGIN: ContactAndFooterSection -->
+<footer class="custom-scroll-margin bg-brand-dark text-white pt-16 pb-8 border-t border-white/10" data-purpose="site-footer" id="contact">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Top Action Strip in Footer -->
+<div class="flex flex-col md:flex-row items-center justify-between pb-10 border-b border-white/10 gap-6">
+<div class="flex items-center space-x-3">
+<div class="w-10 h-10 rounded bg-brand-yellow text-brand-dark flex items-center justify-center font-bold text-lg">
+<i class="fa-solid fa-wrench"></i>
+</div>
+<div>
+<span class="font-extrabold text-xl tracking-tight text-white">LOREN'S</span>
+<span class="text-xs text-gray-400 block tracking-widest uppercase">Plumbing &amp; Gasfitting</span>
+</div>
+</div>
+<div>
+<a class="inline-flex items-center px-6 py-3 rounded bg-brand-yellow hover:bg-brand-gold text-brand-dark font-bold text-xs uppercase tracking-wider transition shadow-sm" href="tel:+15872802134">
+<i class="fa-solid fa-phone mr-2"></i> Get In Touch Now
+          </a>
+</div>
+</div>
+<!-- Footer Info Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 py-10 border-b border-white/10 text-xs text-gray-400">
+<!-- Column 1: Direct Phone Numbers -->
+<div class="flex items-start space-x-3">
+<div class="text-brand-yellow text-base mt-0.5"><i class="fa-solid fa-phone"></i></div>
+<div>
+<p class="font-bold text-white text-sm">Call Us Directly</p>
+<a class="block hover:text-brand-yellow transition mt-1 text-sm font-semibold text-white/90" href="tel:+15872802134">
+              (587) 280-2134
+            </a>
+<p class="text-[11px] text-gray-400 mt-1">24/7 Priority Emergency Callout available</p>
+</div>
+</div>
+<!-- Column 2: Email & Dispatch Details -->
+<div class="flex items-start space-x-3">
+<div class="text-brand-yellow text-base mt-0.5"><i class="fa-solid fa-envelope"></i></div>
+<div>
+<p class="font-bold text-white text-sm">Email Inquiries</p>
+<a class="block hover:text-brand-yellow transition mt-1" href="mailto:contact@lorensplumbing.ca">
+              contact@lorensplumbing.ca
+            </a>
+<p class="text-[11px] text-gray-400 mt-1">Estimates &amp; general consultation</p>
+</div>
+</div>
+<!-- Column 3: Business Hours & Operational Region -->
+<div class="flex items-start space-x-3">
+<div class="text-brand-yellow text-base mt-0.5"><i class="fa-solid fa-clock"></i></div>
+<div>
+<p class="font-bold text-white text-sm">Working Hours</p>
+<p class="mt-1">Mon - Fri: 8:00 AM – 5:00 PM</p>
+<p class="mt-0.5">Sat - Sun: Closed (Emergency Service Available)</p>
+<p class="text-[11px] text-brand-yellow mt-1">Serving Vegreville, AB &amp; Beaver County</p>
+</div>
+</div>
+</div>
+<!-- Footer Bottom Navigation & Copyright -->
+<div class="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-gray-500 gap-4">
+<div class="flex flex-wrap justify-center gap-6 font-medium text-gray-400">
+<a class="hover:text-brand-yellow transition" href="#services">Services</a>
+<a class="hover:text-brand-yellow transition" href="#why-us">Why Loren's</a>
+<a class="hover:text-brand-yellow transition" href="#process">How We Work</a>
+<a class="hover:text-brand-yellow transition" href="#testimonials">Reviews</a>
+<a class="hover:text-brand-yellow transition" href="#blog">News &amp; Guides</a>
+<a class="hover:text-brand-yellow transition" href="#contact">Contact Us</a>
+</div>
+<div class="text-center md:text-right">
+<p>© <span id="current-year"></span> Loren's Plumbing &amp; Gasfitting. All Rights Reserved. Licensed Alberta Trade Contractor.</p>
+</div>
+</div>
+</div>
+</footer>
+<!-- END: ContactAndFooterSection -->
+<!-- BEGIN: InteractiveScripts -->
+<!-- Script for Smooth Scrolling with Sticky Header Compensation -->
+<script data-purpose="smooth-scroll">
+    document.addEventListener('DOMContentLoaded', () => {
+      // Set current copyright year
+      const yearSpan = document.getElementById('current-year');
+      if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+      }
+
+      // Smooth scroll with explicit header offset
+      const navLinks = document.querySelectorAll('a[href^="#"]');
+      navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          const targetId = this.getAttribute('href');
+          if (targetId === '#') return;
+          
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            e.preventDefault();
+            const headerHeight = 80;
+            const elementPosition = targetElement.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
+
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: 'smooth'
+            });
+
+            // Close mobile menu if open
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+              mobileMenu.classList.add('hidden');
+            }
+          }
+        });
+      });
+    });
+  </script>
+<!-- Script for Mobile Navigation Toggle -->
+<script data-purpose="mobile-nav-toggle">
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (mobileMenuBtn && mobileMenu) {
+      mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+  </script>
+<!-- END: InteractiveScripts -->
+</body></html>
